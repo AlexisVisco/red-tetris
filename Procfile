@@ -1,1 +1,1 @@
-web: npm run srv-dist
+web: npm install && npm install -g babel && npm run srv-dist
