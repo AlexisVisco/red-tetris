@@ -57,8 +57,8 @@ class App {
 
     const io = require("socket.io")(server);
     io.on(socketDefs.CONNECTION, (e) => this.handleClient(e));
-    server.listen(4433, function () {
-      console.log('Server on port : 4433');
+    server.listen(process.env["PORT"], function () {
+      console.log('Server on port : ' + process.env["PORT"]);
     });
   }
 }
